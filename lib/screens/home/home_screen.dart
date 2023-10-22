@@ -3,6 +3,8 @@ import 'package:clinic_app/screens/home/widgets/home_body.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
+  static const String name = "home";
+
   final BorderRadius borderRadius = const BorderRadius.only(
     topLeft: Radius.circular(50),
     topRight: Radius.circular(50),

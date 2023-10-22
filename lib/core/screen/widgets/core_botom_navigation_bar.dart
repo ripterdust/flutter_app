@@ -1,4 +1,5 @@
 import 'package:clinic_app/core/screen/widgets/custom_icon_button.dart';
+import 'package:clinic_app/screens/home/home_screen.dart';
 import 'package:flutter/material.dart';
 
 class CoreBottomNavigationBar extends StatelessWidget {
@@ -13,23 +14,21 @@ class CoreBottomNavigationBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    onPressButton() {}
-
-    return BottomAppBar(
+    return const BottomAppBar(
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           CustomIconButton(
-            onPressed: onPressButton,
             icon: Icons.paste_rounded,
+            path: "appointments",
           ),
           CustomIconButton(
-            onPressed: onPressButton,
             icon: Icons.home_rounded,
+            path: HomeScreen.name,
           ),
           CustomIconButton(
-            onPressed: onPressButton,
             icon: Icons.person_rounded,
+            path: "user",
           ),
         ],
       ),

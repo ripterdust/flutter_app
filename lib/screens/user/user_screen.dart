@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class UserScreen extends StatelessWidget {
+  static const String name = 'user';
+
   const UserScreen({super.key});
 
   @override

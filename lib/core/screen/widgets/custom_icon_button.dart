@@ -1,14 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class CustomIconButton extends StatelessWidget {
-  final void Function() onPressed;
   final IconData icon;
-  const CustomIconButton(
-      {super.key, required this.onPressed, required this.icon});
+  final String path;
+
+  const CustomIconButton({
+    super.key,
+    required this.icon,
+    required this.path,
+  });
 
   @override
   Widget build(BuildContext context) {
     final colors = Theme.of(context).colorScheme;
+
+    onPressed() {
+      context.goNamed(path);
+    }
 
     final squareDecoration = BoxDecoration(
       color: colors.primary,
