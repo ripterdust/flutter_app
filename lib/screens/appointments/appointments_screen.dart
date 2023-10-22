@@ -1,3 +1,4 @@
+import 'package:clinic_app/core/screen/screen.dart';
 import 'package:flutter/material.dart';
 
 class AppointmentsScreen extends StatelessWidget {
@@ -7,6 +8,6 @@ class AppointmentsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return const Screen(body: Placeholder());
   }
 }
