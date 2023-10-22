@@ -1,3 +1,5 @@
+import 'package:clinic_app/core/screen/screen.dart';
+import 'package:clinic_app/screens/user/widgets/user_body.dart';
 import 'package:flutter/material.dart';
 
 class UserScreen extends StatelessWidget {
@@ -7,6 +9,9 @@ class UserScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return const Screen(
+      title: "User",
+      body: UserBody(),
+    );
   }
 }
