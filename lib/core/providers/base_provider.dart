@@ -107,7 +107,7 @@ class BaseProvider extends ChangeNotifier {
   ];
 
   List<HospitalEntity> getListHospitals() {
-    return getNHospitals(5);
+    return _hospitals;
   }
 
   List<HospitalEntity> getNHospitals(int count) {

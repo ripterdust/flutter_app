@@ -22,7 +22,7 @@ class HomeBody extends StatelessWidget {
             const UpcomingAppointment(),
             const MedicalSpecializations(),
             Hospitals(
-              hospitals: baseProvider.getListHospitals(),
+              hospitals: baseProvider.getNHospitals(5),
             ),
           ],
         ),
