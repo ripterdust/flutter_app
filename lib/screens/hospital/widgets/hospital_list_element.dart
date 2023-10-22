@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 
-class Hospital extends StatelessWidget {
+class HospitalListElement extends StatelessWidget {
   final String name;
   final String address;
-  const Hospital({super.key, required this.name, required this.address});
+  const HospitalListElement(
+      {super.key, required this.name, required this.address});
 
   @override
   Widget build(BuildContext context) {

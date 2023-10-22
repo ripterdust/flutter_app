@@ -1,5 +1,5 @@
 import 'package:clinic_app/core/screen/widgets/custom_icon_button.dart';
-import 'package:clinic_app/screens/home/home_screen.dart';
+import 'package:clinic_app/screens/screens.dart';
 import 'package:flutter/material.dart';
 
 class CoreBottomNavigationBar extends StatelessWidget {
@@ -19,8 +19,8 @@ class CoreBottomNavigationBar extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           CustomIconButton(
-            icon: Icons.paste_rounded,
-            path: "appointments",
+            icon: Icons.business_outlined,
+            path: HospitalListScreen.name,
           ),
           CustomIconButton(
             icon: Icons.home_rounded,
@@ -28,7 +28,7 @@ class CoreBottomNavigationBar extends StatelessWidget {
           ),
           CustomIconButton(
             icon: Icons.person_rounded,
-            path: "user",
+            path: UserScreen.name,
           ),
         ],
       ),
