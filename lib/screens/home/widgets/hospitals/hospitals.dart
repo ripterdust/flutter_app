@@ -1,6 +1,7 @@
 import 'package:clinic_app/core/entities/hospital_entity.dart';
 import 'package:clinic_app/core/screen/widgets/module_title.dart';
 import 'package:clinic_app/screens/home/widgets/hospitals/widget/hospital.dart';
+import 'package:clinic_app/screens/hospital/hospitalList/hospital_list_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -23,7 +24,7 @@ class Hospitals extends StatelessWidget {
     }
 
     moveToHospitals() {
-      context.go('/hospitals');
+      context.pushNamed(HospitalListScreen.name);
     }
 
     const ButtonStyle buttonStyle = ButtonStyle();
