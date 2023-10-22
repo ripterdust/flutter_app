@@ -1,4 +1,4 @@
-import 'package:clinic_app/screens/user/widgets/user_buttons.dart';
+import 'package:clinic_app/screens/user/widgets/userButtons/user_buttons.dart';
 import 'package:clinic_app/screens/user/widgets/user_data.dart';
 import 'package:flutter/material.dart';
 
@@ -10,6 +10,9 @@ class UserBody extends StatelessWidget {
     return const Column(
       children: [
         UserData(),
+        SizedBox(
+          height: 10,
+        ),
         UserButtons(),
       ],
     );
